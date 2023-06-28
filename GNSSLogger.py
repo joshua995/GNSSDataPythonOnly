@@ -70,7 +70,7 @@ while 1:
             write_coordinates_to_file("WalkTest.txt", [averageLatitude, averageLongitude]) # Writes the average lat/lon from the 3 satellites
 
             speedsKnotsKmHAltitude = [(float(gnrmcSpeedKnots) + float(gnvtgSpeedKnots)) / 2, float(gnvtgSpeedKM), float(gnggaAltitude)]
-            #write_coordinates_to_file("SpeedsAltitude.txt", speedsKnotsKmHAltitude) # Writes the speeds and altitude to a file
+            write_coordinates_to_file("SpeedsAltitude.txt", speedsKnotsKmHAltitude) # Writes the speeds and altitude to a file
 
             print(f"Lat: {float(averageLatitude)}, Lon: {float(averageLongitude)}, Alt: {float(gnggaAltitude)}, Speed: {(float(gnrmcSpeedKnots) + float(gnvtgSpeedKnots)) / 2}Kn, {gnvtgSpeedKM}Km/h")
     
